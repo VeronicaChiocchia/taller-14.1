@@ -1,0 +1,28 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+  .fixed-height {
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fills the area while maintaining its aspect ratio */
+  }
+
+  .fixed-card-body {
+    height: 200px; /* Set the fixed height for card body */
+    overflow: hidden; /*  Hide content that exceeds the height */
+  }
+
+  .card-content-container {
+    height: 156px; /* Set the fixed height for card body */
+    overflow: hidden;
+    padding-bottom: 16px;
+  }
+
+  #description > p {
+    overflow: hidden; /* Hide content that exceeds the height */
+    display: -webkit-box; /* Flexbox display mode for multiline ellipsis */
+    -webkit-box-orient: vertical; /* Specifies the orientation of the box */
+    line-clamp: 3;
+    -webkit-line-clamp: 3; /* Limit to 3 lines, change this number as needed */
+    text-overflow: ellipsis; /* Add the ellipsis */
+  }
